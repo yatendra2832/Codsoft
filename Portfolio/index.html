@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website YS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <!-- <script src="index.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/f0c52e6884.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header opened -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="/Portfolio/logo.png" alt="Logo" />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark close-icon" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars menu-bar" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hi, I'm <span class="text-name">Yatendra Singh</span> & I'm a Web
+            Developer
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- Header closed -->
+    <!-- About section 1     start -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="/Portfolio/ys.jpg"
+              alt="userImage"
+              width="300px"
+              height="400px"
+              class="image1"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title animated-text">About Me</h1>
+            <!-- <div class="animated-border"></div> -->
+            <p>
+              I'm passionate about learning how the web functions from end to
+              end - understanding what happens behind the scenes when we
+              interact with websites. This curiosity has been the driving force
+              behind my journey into UI/UX design and web development.
+            </p>
+            <p>
+              One of the most memorable experiences in my career was working on
+              my "Healthify" project. It was a MERN stack-based project, marking
+              my first full-stack application. This project not only challenged
+              me but also solidified my passion for web development.
+            </p>
+            <p>
+              In my work as a designer and developer, I prioritize continuous
+              learning and staying updated with new technologies. I believe in
+              the importance of efficiency and effectiveness in every project I
+              undertake.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interface</li>
+                <li><span>Web Developement</span><br />Web App Developement</li>
+                <li>
+                  <span>App Developement</span><br />Building Android / iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />UI/UX Design Training at ET
+                  Institute
+                </li>
+                <li><span>2019-2021</span><br />Team lead at StartApp LLC</li>
+                <li>
+                  <span>2017-2019</span><br />UI/UX Design Executive at Coin
+                  Digital Ltd.
+                </li>
+                <li>
+                  <span>2016-2017</span><br />Internship at ekart eCommerce
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li></li>
+                <li>
+                  <span>Present</span><br />Diploma in Information Technology at
+                  Government Polytechnic Ghaziabad
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section Closed -->
+    <!-- Service Section Start -->
+    <!-- <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+              amet debitis obcaecati animi quae hic? Dolores corrupti nesciunt
+              dolor amet.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+              amet debitis obcaecati animi quae hic? Dolores corrupti nesciunt
+              dolor amet.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+              amet debitis obcaecati animi quae hic? Dolores corrupti nesciunt
+              dolor amet.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I specialize in crafting visually appealing and user-friendly
+              websites tailored to your needs. Whether you're starting from
+              scratch or looking to revamp your existing site, I'll ensure a
+              seamless and engaging online experience for your audience.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Elevate your digital presence with intuitive and elegant user
+              interfaces. From wireframing to prototyping, I focus on creating
+              designs that not only look stunning but also prioritize user
+              satisfaction and usability.
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Transform your app idea into a visually stunning reality. I
+              specialize in designing mobile applications that are both
+              aesthetically pleasing and functionally robust. Let's work
+              together to create an app that stands out in the crowded digital
+              marketplace.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section End -->
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/Portfolio/work1.png" alt="work1" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The App connects you to the talented people around the world.
+                Download it from the play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Portfolio/work2.png" alt="work2" />
+            <div class="layer">
+              <h3>e Commerce Website</h3>
+              <p>
+                The App that provide you the best products around the world.
+                Download it from the play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Portfolio/work3.png" alt="work3" />
+            <div class="layer">
+              <h3>Design Work</h3>
+              <p>Differnet types of Design Web Desing , UI/UX , App Desing</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- Portfolio End -->
+    <!-- Contact  form start-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> contact@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8750145379</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+
+              <a href="https://instagram.com" class="social-icons"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+
+              <a href="https://linkedIn.com" class="social-icons"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+
+              <a href="https://youtube.com" class="social-icons"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+
+              <a href="https://github.com" class="social-icons"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="/Portfolio/Resume.png" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Yatendra . Made by Yatendra Yadav
+          <i class="fa-solid fa-code"></i>
+        </p>
+      </div>
+    </div>
+    <!-- Contact Form End -->
+    <script src="/Portfolio/index.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxprwmiX3k5KYkZaLhWF8jAVBvC33O5ab7jl74IMRP-J1EyGGmH_qLzi13XvnYVz-d3/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
+
+<!-- https://script.google.com/macros/s/AKfycbxprwmiX3k5KYkZaLhWF8jAVBvC33O5ab7jl74IMRP-J1EyGGmH_qLzi13XvnYVz-d3/exec -->
+<!-- https://docs.google.com/spreadsheets/d/1QHbn4409B-eIqwkTTTLVKQUT6Ss-utDRZm_EdBDHbiY/edit#gid=0https://docs.google.com/spreadsheets/d/1QHbn4409B-eIqwkTTTLVKQUT6Ss-utDRZm_EdBDHbiY/edit#gid=0 spreadsheet link -->
